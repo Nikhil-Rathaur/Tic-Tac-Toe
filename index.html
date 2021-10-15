@@ -1,34 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Tic Tac Toe</title>
+   
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+
+	<!-- CSS file Included -->
+	<link rel="stylesheet"
+		type="text/css" href="tac.css">
+
+	<!-- JavaScript file included -->
+	<script src="toe.js"></script>
+	
 </head>
-<body>
-  
-   <div class="container">
-    <h1 class="title">tic <span>Tac</span> toe</h1>
-    <div class="status-action">
-        <div class="status">x is next</div>
-        <div class="reset">Reset</div>
-    </div>
-    <div class="game-grid">
 
-        <div class="game-cell"></div>
-      <div class="game-cell"></div>
-      <div class="game-cell"></div>
-      <div class="game-cell"></div>
-      <div class="game-cell"></div>
-      <div class="game-cell"></div>
-      <div class="game-cell"></div>
-      <div class="game-cell"></div>
-      <div class="game-cell"></div>
+<body >
+	<div id="main" >
+		<marquee   width="60%" direction="down" height="100px">
+			<span>
+		
+		<h1 id="GAME">TIC TAC TOE</h1>
+	</marquee>
 
-    </div>
-   </div> 
- <script src="app.js"></script>   
+		<!-- Game Instructions -->
+		<br>
+		<span id="ins">Game starts by just Tap on
+			box<br><br>First Player starts as
+			<b>NEO</b><br>And<br>Second
+			Player as <b>YOU</b>
+		</span>
+
+
+		<br><br>
+		<!-- 3*3 grid of Boxes -->
+		<input type="text" id="b1" onclick=
+			"myfunc_3(); myfunc();" readonly>
+
+		<input type="text" id="b2" onclick=
+			"myfunc_4(); myfunc();" readonly>
+
+		<input type="text" id="b3" onclick=
+			"myfunc_5(); myfunc();" readonly>
+		<br><br>
+
+		<input type="text" id="b4" onclick=
+			"myfunc_6(); myfunc();" readonly>
+			
+		<input type="text" id="b5" onclick=
+			"myfunc_7(); myfunc();" readonly>
+
+		<input type="text" id="b6" onclick=
+			"myfunc_8(); myfunc();" readonly>
+		<br><br>
+
+		<input type="text" id="b7" onclick=
+			"myfunc_9(); myfunc();" readonly>
+
+		<input type="text" id="b8" onclick=
+			"myfunc_10();myfunc();" readonly>
+
+		<input type="text" id="b9" onclick=
+			"myfunc_11();myfunc();" readonly>
+
+		<!-- Grid end here -->
+		<br><br><br>
+		<!-- Button to reset game -->
+		<button id="but" onclick="myfunc_2()">
+			AGAIN
+		</button>
+
+		<br><br>
+		<!-- Space to show player turn -->
+		<span id="print"></span>
+       
+		   <div class="eye"></div>
+		   <div class= "eyes"></div>
+
+
+	</div>
 </body>
+
 </html>
